@@ -349,11 +349,12 @@ a:focus-visible,button:focus-visible,input:focus-visible,textarea:focus-visible{
 @media (max-width:760px){.modality-grid{grid-template-columns:1fr;}}
 
 /* ---------- Credential / association badges ---------- */
-.assoc{display:flex;flex-wrap:wrap;gap:18px;align-items:center;justify-content:center;}
-.assoc a{display:flex;align-items:center;gap:10px;background:#fff;border:1px solid var(--line);border-radius:12px;padding:14px 20px;color:var(--teal-deep);font-weight:600;font-size:.95rem;transition:box-shadow .2s,transform .2s;text-decoration:none;text-align:left;}
+.assoc{display:grid;grid-template-columns:repeat(2,1fr);gap:18px;max-width:760px;margin:0 auto;}
+.assoc a{display:flex;align-items:center;gap:12px;background:#fff;border:1px solid var(--line);border-radius:12px;padding:18px 22px;color:var(--teal-deep);font-weight:600;font-size:.98rem;transition:box-shadow .2s,transform .2s;text-decoration:none;text-align:left;}
 .assoc a:hover{box-shadow:var(--shadow-soft);transform:translateY(-2px);text-decoration:none;}
 .assoc a svg,.assoc a img{width:30px;height:30px;flex:none;}
 .assoc a small{display:block;font-weight:400;color:var(--ink-soft);font-size:.8rem;}
+@media (max-width:620px){.assoc{grid-template-columns:1fr;}}
 
 /* ---------- Social icons ---------- */
 .social-row{display:flex;gap:14px;align-items:center;margin-top:18px;}
@@ -399,11 +400,9 @@ a:focus-visible,button:focus-visible,input:focus-visible,textarea:focus-visible{
 .section-sage .arterie-logo,.section-forest .arterie-logo{filter:brightness(0) invert(1);opacity:.92;}
 .info-block .arterie-logo{max-width:190px;}
 
-/* ---------- Contact: map left / info right / hours below ---------- */
-.location-grid{display:grid;grid-template-columns:1.1fr .9fr;gap:48px;align-items:start;}
-.location-map{position:relative;}
-.location-map .map-embed{height:100%;min-height:360px;margin-top:0;}
+/* ---------- Contact: map left / info right (address, service areas, hours) ---------- */
+.location-grid{display:grid;grid-template-columns:1.05fr .95fr;gap:48px;align-items:stretch;}
+.location-map{position:relative;min-height:100%;}
+.location-map .map-embed{height:100%;min-height:420px;margin-top:0;}
 .location-info .info-block:first-of-type{margin-top:0;}
-.hours-panel{margin-top:40px;background:var(--paper-2);border:1px solid var(--line);border-radius:var(--radius-lg);padding:32px 36px;max-width:560px;}
-.hours-panel h3{margin:0 0 12px;font-size:1.3rem;}
 @media (max-width:860px){.location-grid{grid-template-columns:1fr;gap:32px;}.location-map .map-embed{min-height:300px;}}
