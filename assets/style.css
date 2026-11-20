@@ -414,10 +414,10 @@ a:focus-visible,button:focus-visible,input:focus-visible,textarea:focus-visible{
 @media (max-width:860px){.location-grid{grid-template-columns:1fr;gap:32px;}.location-map .map-embed{min-height:300px;}}
 
 /* ---------- Layered media (exterior + interior overlap) ---------- */
-.layered-media{position:relative;padding-bottom:72px;}
-.layered-media .layer-back{width:78%;border-radius:var(--radius-lg);box-shadow:var(--shadow);display:block;object-fit:cover;aspect-ratio:4/3;}
+.layered-media{position:relative;padding-bottom:90px;padding-right:72px;}
+.layered-media .layer-back{width:74%;border-radius:var(--radius-lg);box-shadow:var(--shadow);display:block;object-fit:cover;aspect-ratio:3/4;}
 .layered-media .layer-front{position:absolute;right:0;bottom:0;width:58%;border-radius:var(--radius-lg);box-shadow:var(--shadow);border:6px solid var(--paper);object-fit:cover;aspect-ratio:3/4;}
-@media (max-width:860px){.layered-media{padding-bottom:56px;}}
+@media (max-width:860px){.layered-media{padding-bottom:64px;padding-right:48px;}}
 
 /* Arterie logo: dark version shows as-is (no invert) */
 .section-sage .arterie-logo,.section-forest .arterie-logo{filter:none;opacity:1;}
