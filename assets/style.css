@@ -41,10 +41,13 @@ body{
 img{max-width:100%;display:block;}
 a{color:var(--teal);text-decoration:none;}
 a:hover{text-decoration:underline;}
-.wrap{max-width:var(--maxw);margin:0 auto;padding:0 26px;}
+.wrap{max-width:var(--maxw);margin:0 auto;padding:0 40px;}
+@media (max-width:860px){.wrap{padding:0 28px;}}
+@media (max-width:480px){.wrap{padding:0 22px;}}
 
 h1,h2,h3,h4{font-family:var(--serif);font-weight:600;color:var(--forest);line-height:1.08;margin:0 0 .5em;letter-spacing:.2px;}
 h1{font-size:clamp(2.7rem,6vw,5rem);font-weight:700;}
+@media (max-width:480px){h1{font-size:2.35rem;}}
 h2{font-size:clamp(2.1rem,4vw,3.3rem);}
 h3{font-size:clamp(1.35rem,2.2vw,1.7rem);}
 p{margin:0 0 1.15em;max-width:64ch;}
@@ -77,7 +80,9 @@ a:focus-visible,button:focus-visible,input:focus-visible,textarea:focus-visible{
 .btn:hover .arw{transform:translateX(3px);}
 
 .site-header{position:sticky;top:0;z-index:100;background:var(--logo-bg);border-bottom:1px solid rgba(0,0,0,.08);}
-.nav{display:flex;align-items:center;justify-content:space-between;gap:20px;padding:8px 26px;max-width:var(--maxw);margin:0 auto;}
+.nav{display:flex;align-items:center;justify-content:space-between;gap:20px;padding:8px 40px;max-width:var(--maxw);margin:0 auto;}
+@media (max-width:860px){.nav{padding:8px 28px;}}
+@media (max-width:480px){.nav{padding:8px 22px;}}
 .brand{display:flex;align-items:center;gap:13px;color:#fff;}
 .brand:hover{text-decoration:none;}
 .brand .brand-logo{height:78px;width:auto;display:block;}
@@ -97,7 +102,7 @@ a:focus-visible,button:focus-visible,input:focus-visible,textarea:focus-visible{
 @media (max-width:940px){
   .nav-toggle{display:block;}
   .nav-links{position:absolute;top:100%;left:0;right:0;background:var(--logo-bg);flex-direction:column;align-items:stretch;gap:0;
-    padding:8px 26px 22px;border-bottom:1px solid rgba(0,0,0,.12);box-shadow:var(--shadow-soft);display:none;}
+    padding:8px 28px 22px;border-bottom:1px solid rgba(0,0,0,.12);box-shadow:var(--shadow-soft);display:none;}
   .nav-links.open{display:flex;}
   .nav-links a:not(.nav-cta){padding:14px 0;border-bottom:1px solid rgba(255,255,255,.22);color:#fff;}
   .nav-links a:not(.nav-cta)::after{display:none;}
