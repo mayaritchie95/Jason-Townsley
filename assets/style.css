@@ -414,11 +414,10 @@ a:focus-visible,button:focus-visible,input:focus-visible,textarea:focus-visible{
 @media (max-width:860px){.location-grid{grid-template-columns:1fr;gap:32px;}.location-map .map-embed{min-height:300px;}}
 
 /* ---------- Layered media (exterior + interior overlap) ---------- */
-.layered-media{position:relative;min-height:640px;}
-.layered-media .layer-back{position:absolute;top:0;left:0;width:64%;border-radius:var(--radius-lg);box-shadow:var(--shadow);object-fit:cover;aspect-ratio:3/4;}
-.layered-media .layer-front{position:absolute;right:0;bottom:0;width:64%;border-radius:var(--radius-lg);box-shadow:var(--shadow);border:6px solid var(--paper);object-fit:cover;aspect-ratio:3/4;}
-@media (max-width:860px){.layered-media{min-height:560px;}}
-@media (max-width:560px){.layered-media{min-height:480px;}.layered-media .layer-back,.layered-media .layer-front{width:70%;}}
+.layered-media{display:grid;grid-template-columns:1fr 1fr;gap:18px;align-items:start;}
+.layered-media .layer-back,.layered-media .layer-front{width:100%;border-radius:var(--radius-lg);box-shadow:var(--shadow);object-fit:cover;aspect-ratio:3/4;display:block;}
+.layered-media .layer-front{margin-top:48px;}
+@media (max-width:560px){.layered-media{gap:12px;}.layered-media .layer-front{margin-top:28px;}}
 
 /* Arterie logo: dark version shows as-is (no invert) */
 .section-sage .arterie-logo,.section-forest .arterie-logo{filter:none;opacity:1;}
