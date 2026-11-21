@@ -440,3 +440,12 @@ a:focus-visible,button:focus-visible,input:focus-visible,textarea:focus-visible{
 .haven-lead{font-family:var(--serif);font-size:clamp(1.5rem,2.8vw,2rem);line-height:1.4;color:var(--forest);margin:0 auto .9em;max-width:40ch;}
 .haven-body{font-size:1.12rem;line-height:1.7;color:var(--ink-soft);margin:0 auto;max-width:62ch;}
 @media (max-width:560px){.haven-body{font-size:1.02rem;}}
+
+/* ---------- Side-by-side duo (Leveling up + Night table) ---------- */
+.duo{display:grid;grid-template-columns:1fr 1fr;gap:48px;align-items:start;}
+.duo-col .len{color:var(--clay);font-family:var(--serif);font-style:italic;font-size:1.05rem;margin:0 0 10px;}
+.duo-card{background:#fff;border:1px solid var(--line);border-radius:var(--radius);padding:30px 32px;margin-top:8px;}
+.duo-card h3{margin:0 0 .3em;}
+.duo-card p{color:var(--ink-soft);margin:0;}
+.duo-card p + p{margin-top:.5em;}
+@media (max-width:820px){.duo{grid-template-columns:1fr;gap:40px;}}
