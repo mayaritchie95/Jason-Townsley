@@ -434,3 +434,9 @@ a:focus-visible,button:focus-visible,input:focus-visible,textarea:focus-visible{
 .built-by a{display:inline-flex;align-items:center;}
 .built-by img{height:15px;width:auto;opacity:.75;transition:opacity .2s;vertical-align:middle;}
 .built-by a:hover img{opacity:1;}
+
+/* ---------- Safe haven expectation blurb (home) ---------- */
+.haven{max-width:760px;margin:0 auto;text-align:center;}
+.haven-lead{font-family:var(--serif);font-size:clamp(1.5rem,2.8vw,2rem);line-height:1.4;color:var(--forest);margin:0 auto .9em;max-width:40ch;}
+.haven-body{font-size:1.12rem;line-height:1.7;color:var(--ink-soft);margin:0 auto;max-width:62ch;}
+@media (max-width:560px){.haven-body{font-size:1.02rem;}}
