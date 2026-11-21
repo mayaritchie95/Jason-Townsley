@@ -428,3 +428,9 @@ a:focus-visible,button:focus-visible,input:focus-visible,textarea:focus-visible{
 
 /* Arterie logo: dark version shows as-is (no invert) */
 .section-sage .arterie-logo,.section-forest .arterie-logo{filter:none;opacity:1;}
+
+/* ---------- PagePros footer credit ---------- */
+.built-by{display:inline-flex;align-items:center;gap:7px;font-size:.82rem;color:rgba(255,255,255,.6);white-space:nowrap;}
+.built-by a{display:inline-flex;align-items:center;}
+.built-by img{height:15px;width:auto;opacity:.75;transition:opacity .2s;vertical-align:middle;}
+.built-by a:hover img{opacity:1;}
